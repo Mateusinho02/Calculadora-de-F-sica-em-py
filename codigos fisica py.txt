@@ -1,0 +1,145 @@
+opcao = 1
+while opcao !=0:
+   print("Seja Bem vindo(a)\n")
+   print("Escreva [0] para sair do programa ou")
+   print("Escreva [1] para Movimento retilíneo uniforme")
+   print("Escreva [2] para Posição final movimento retilíneo uniformemente variado")
+   print("Escreva [3] para Velocidade final movimento Circular Uniforme")
+   print("Escreva [4] para Distância")
+   print("Escreva [5] para Empuxo")
+   print("Escreva [6] para Trabalho")
+   print("Escreva [7] para Pressão")
+   print("Escreva [8] para Segunda Lei de Newton")
+   print("Escreva [9] para Eletricidade")
+   print("Escreva [10] para Aceleração média")
+   print("Escreva [11] para Campo Elétrico")
+   print("Escreva [12] para Força")
+   print("Escreva [13] para Velocidade de ondas")
+   print("Escreva [14] para Calorimetria")
+   print("Escreva [15] para Função horária da posição em função do tempo\n")
+
+   opcao= int(input("Oque voçê deseja saber ?"))
+   if opcao ==1:
+       print("\nMovimento retilíneo uniforme\n")
+       inicial = float(input("Escreva a posição inicial:"))
+       velocidade = float(input("Escreva a velocidade:"))
+       intervalo = float(input("Escreva o intervalo de tempo:"))
+       final = inicial + (velocidade*intervalo)
+       print(f"O resultado final é :{final}")
+
+   elif opcao ==2:
+       print("\nMovimento retilíneo uniformemente variado\n")
+       s0 = float(input("Escreva a posição inicial:"))
+       v0 = float(input("Escreva a velocidade inicial:"))
+       a = float(input("Escreva a aceleração: "))
+       t = float(input("Escreva o tempo:"))
+       s = s0 + (v0 * t) + 1 / 2 + a + (t * 2)
+       print(f"O resultado final é:{s}")
+
+
+   elif opcao ==3:
+       print("\nMovimento Circular Uniforme\n")
+       velocidade = float(input("Escreva a velocidade:"))
+       w = float(input("Escreva a velocidade angular:"))
+       r = float(input("Escreva o raio da curvatura da trajetória:"))
+       final = (w*r)
+       print(f"O resultado final é :{final} ")
+
+   elif opcao ==4:
+       print("\nDistância\n")
+       d = float(input("Escreva a distância:"))
+       v = float(input("Escreva a velocidade :"))
+       t = float(input("Escreva o tempo:"))
+       d = v*t
+       print(f"O resultado final é: {d}")
+
+   elif opcao ==5:
+       print("\nEmpuxo\n")
+       E = float(input("Escreva o empuxo:"))
+       d = float(input("Escreva a densidade:"))
+       v = float(input("Escreva o volume deslocado:"))
+       g = float(input("Escreva a acelereção da gravidade:"))
+       E = d*v*g
+       print(f"O resultado final é: {E}")
+
+   elif opcao ==6:
+       print("\nTrabalho\n")
+       t = float(input("Escreva o trabalho:"))
+       F = float(input("Escreva a força:"))
+       d = float(input("Escreva o deslocamento:"))
+       τ = F*d
+       print(f"O resultado final é: {τ}")
+
+   elif opcao ==7:
+       print("\nPressão\n")
+       p = float(input("Escreva a pressão:"))
+       v = float(input("Escreva o volume:"))
+       n = float(input("Escreva o numero de mols:"))
+       R = float(input("Escreva a constante dos gases perfeitos:"))
+       temp = float(input("Escreva a temperatura:"))
+       pr =  n*R*temp
+       print(f"O resultado final é: {pr}")
+
+   elif opcao ==8:
+       print("\nSegunda Lei de Newton\n")
+       m = float(input("Escreva a massa:"))
+       a = float(input("Escreva a aceleração:"))
+       f = (m*a)
+       print(f"O resultado final é:{f}")
+
+   elif opcao ==9:
+        print("\nEletricidade\n")
+        r = float(input("Escreva a resistência elétrica:"))
+        i = float(input("Escreva a intensidade da corrente elétrica:"))
+        U = r*i
+        print(f"O resultado final é:{U}")
+
+   elif opcao ==10:
+    print("\nAceleração média\n")
+    v_var = float(input("Escreva a variação da velocidade:"))
+    inter_temp = float(input("Escreva o intervalo de tempo:"))
+    a_media = v_var / inter_temp
+    print(f"O resultado final é: {a_media}")
+
+   elif opcao ==11:
+    print("\nCampo Elétrico\n")
+    camp_eletric = float(input("Escreva o campo eletrico:"))
+    força = float(input("Escreva a força:"))
+    carg_da_prv = float(input("Escreva a carga da prova:"))
+    E = força/carg_da_prv
+    print(f"O resultado final é: {E}")
+
+   elif opcao ==12:
+    print("\nForça\n")
+    forr = float(input("Escreva a força:"))
+    mass = float(input("Escreva a massa:"))
+    acele = float(input("Escreva a aceleração:"))
+    forr = mass*acele
+    print(f"O resultado final é:{forr}")
+
+   elif opcao ==13:
+    print("\nVelocidade de ondas\n")
+    veloc = float(input("Escreva a velocidade da onda:"))
+    comp_de_ond = float(input("Escreva o comprimento de onda:"))
+    freq = float(input("Escreva a frequência da onda:"))
+    veloc = comp_de_ond*freq
+    print(f"O resultado final é: {veloc}")
+
+   elif opcao ==14:
+    print("\nCalorimetria\n")
+    quant = float(input("Escreva a quantidade de calor: "))
+    mas= float(input("Escreva a massa:"))
+    cal = float(input("Escreva o calor específico:"))
+    vari_temp = float(input("Escreva a variação de temperatura:"))
+    quant = mas*cal*vari_temp
+    print(f"O resultado final é :{quant}")
+
+   elif opcao ==15:
+    print("\nFunção horária da posição em função do tempo\n")
+    so = float(input("Escreva a posição inicial:"))
+    vo = float(input("Escreva a velocidade inicial:"))
+    inter_temp = float(input("Escreva o tempo:"))
+    a = float(input("Escreva a aceleração:"))
+    s = so + (vo * inter_temp) + ((1/2)* a*(inter_temp**2))
+    print(f'O resultado final é: {s}')
+
