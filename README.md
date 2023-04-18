@@ -1,4 +1,6 @@
 Calculadora de Física
+
+
 Esta é uma calculadora de Física que contém 15 fórmulas úteis para a resolução de problemas em diversos campos da Física. Essa calculadora foi desenvolvida com o intuito de facilitar o trabalho de estudantes e profissionais que precisam realizar cálculos frequentes no dia a dia.
 
 Como Usar
